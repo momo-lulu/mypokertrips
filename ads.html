@@ -325,6 +325,9 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
   .bundle li { display: flex; justify-content: space-between; gap: 10px; border-top: 1px dashed var(--border); padding: 6px 0; color: var(--text-muted); }
   .bundle li b { color: var(--text-strong); font-weight: 600; }
   .bundle .bd-list { font-size: 12px; color: var(--text-muted); margin: -2px 0 6px; }
+  .bundle li { justify-content: flex-start; align-items: flex-start; gap: 8px; color: var(--text-strong); font-weight: 500; }
+  .bundle li i { font-size: 11px; margin-top: 4px; }
+  .bundle .bd-desc { min-height: 34px; }
 </style>
 </head>
 <body>
@@ -380,7 +383,7 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
       <div class="toc-item"><span class="toc-num">01</span><span>마이포커트립스 매체 소개</span><small>매체 · 이용자 · 콘텐츠</small></div>
       <div class="toc-item"><span class="toc-num">02</span><span>스폰서 대회 고정 노출 소개</span><small>대표 상품</small></div>
       <div class="toc-item"><span class="toc-num">03</span><span>상품 특장점</span><small>무료와 유료의 경계</small></div>
-      <div class="toc-item"><span class="toc-num">04</span><span>광고 상품 · 단가</span><small>노출형 · 텍스트 라인 · 메시지형 · 자동화 · 패키지 3종</small></div>
+      <div class="toc-item"><span class="toc-num">04</span><span>광고 상품 · 단가</span><small>패키지 3종 · 개별 판매 상품 · 포함 서비스</small></div>
       <div class="toc-item"><span class="toc-num">05</span><span>광고 신청</span><small>절차 · 게재 기준 · 문의</small></div>
     </div>
   </div>
@@ -558,10 +561,10 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
       <div class="card compare-col pos a-right d2">
         <div class="compare-head"><i class="fa-solid fa-star"></i>유료 (광고 구좌)</div>
         <div class="compare-item"><i class="fa-solid fa-star"></i><span><strong>홈 · 일정 목록 상단 스폰서 자리 고정</strong> (S1 · 월 250만 원)</span></div>
-        <div class="compare-item"><i class="fa-solid fa-image"></i><span>홈 상단 · 목록 중간 · 상세 하단 <strong>배너</strong> (S2~S4 · 월 50만~120만 원)</span></div>
-        <div class="compare-item"><i class="fa-solid fa-align-left"></i><span><strong>텍스트 라인 광고</strong> · 워딩만 (월 15만 원~)</span></div>
-        <div class="compare-item"><i class="fa-solid fa-comment-dots"></i><span>카카오톡 <strong>주간 요약 · 리마인드 삽입</strong> (회당 20만~25만 원 · 런칭 예정)</span></div>
-        <div class="compare-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span><strong>제작 · 자동화 서비스</strong> (건당 5만 원~)</span></div>
+        <div class="compare-item"><i class="fa-solid fa-image"></i><span>홈 상단 · 목록 중간 · 상세 하단 <strong>배너</strong> (S2~S4 · 스탠다드 포함)</span></div>
+        <div class="compare-item"><i class="fa-solid fa-align-left"></i><span><strong>텍스트 라인 광고</strong> · 워딩만 (5구좌 세트 월 100만 원)</span></div>
+        <div class="compare-item"><i class="fa-solid fa-comment-dots"></i><span>카카오톡 <strong>주간 요약 · 리마인드 삽입</strong> (스탠다드 포함 · 런칭 예정)</span></div>
+        <div class="compare-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span><strong>제작 · 자동화 서비스</strong> (패키지 기본 포함)</span></div>
       </div>
     </div>
     <div class="foot-note" style="text-align:center;margin-top:14px">S1~S5와 순차 오픈 배너를 묶은 <strong>스탠다드 패키지가 월 500만 원</strong>입니다. 개별 단가와 패키지 3종은 04장에 있습니다.</div>
@@ -572,7 +575,7 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
 <!-- ===== 13 · Divider 04 ===== -->
 <section class="slide slide-dark" id="slide-11">
   <div class="doc-tag"><span class="wm">MyPokerTrips</span><span>광고 상품 소개서</span></div>
-  <div class="divider-wrap"><div class="divider-num a-left d1">04</div><div class="a-left d2"><div class="divider-title">광고 상품 · 단가</div><div class="divider-sub">스탠다드 패키지 월 500만 원 · 구좌별 개별 단가 · 패키지 3종</div></div></div>
+  <div class="divider-wrap"><div class="divider-num a-left d1">04</div><div class="a-left d2"><div class="divider-title">광고 상품 · 단가</div><div class="divider-sub">스탠다드 패키지 월 500만 원 · 개별 판매 상품 · 패키지 포함 서비스</div></div></div>
   <div class="brand-mark">MyPokerTrips</div>
 </section>
 
@@ -580,112 +583,28 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
 <section class="slide" id="slide-12">
   <div class="sec-label"><b>04</b>광고 상품 · 단가</div>
   <div class="page-head">
-    <div class="page-title a-left d1">노출형 구좌 단가</div>
-    <p class="page-desc a-right d1">배너 · 고정 노출 · 팝업 구좌입니다. <strong>구좌마다 개별 단가</strong>로 판매합니다.<br>모든 구좌에 "광고" 또는 "스폰서" 표기 · 노출은 화면 50% 이상 1초 기준 · 금액은 월 · VAT 별도.</p>
-  </div>
-  <div class="slide-body">
-    <table class="tbl compact dense a-up d2" style="font-size:12px">
-      <thead><tr><th style="width:250px">구좌</th><th>위치</th><th>형태</th><th style="width:110px">구좌 수</th><th style="width:150px">단가 (월)</th></tr></thead>
-      <tbody>
-        <tr><td class="grp" colspan="5">노출형 구좌</td></tr>
-        <tr><td class="rowhead">S1. 스폰서 대회 고정 노출 <span class="pill coral">대표</span></td><td>홈 스폰서 영역 + 일정 목록 상단, 대회 기간 고정</td><td class="muted">대회 카드 + 스폰서 배지</td><td>3 (로테이션)</td><td><span class="win"><strong>250만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S2. 홈 상단 배너 <span class="pill coral">대표</span></td><td>홈 최상단, 롤링 노출</td><td class="muted">이미지 배너 (롤링)</td><td>3</td><td><span class="win"><strong>120만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S3. 일정 목록 중간 배너</td><td>일정 목록 사이 (상단 · 하단 구간)</td><td class="muted">카드형 배너</td><td>2</td><td><span class="win"><strong>70만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S4. 대회 상세 하단 배너</td><td>모든 대회 상세 페이지 하단</td><td class="muted">이미지 배너</td><td>1</td><td><span class="win"><strong>50만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S6. 다이어리 탭 상단 배너 <span class="pill indigo">런칭 예정</span></td><td>내 다이어리 목록 위</td><td class="muted">이미지 배너</td><td>1</td><td><span class="win"><strong>25만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S8. 시리즈 상세 하단 배너 <span class="pill indigo">런칭 예정</span></td><td>시리즈(연속 대회) 상세 하단</td><td class="muted">이미지 배너</td><td>1</td><td><span class="win"><strong>20만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S7. 검색 결과 하단 배너 <span class="pill indigo">런칭 예정</span></td><td>대회명 검색 결과 최하단</td><td class="muted">카드형 배너</td><td>1</td><td><span class="win"><strong>15만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S9. 국내 · 해외 탭 상단 배너 <span class="pill indigo">런칭 예정</span></td><td>국내 / 해외 탭 첫 화면 상단</td><td class="muted">이미지 배너</td><td>2</td><td><span class="win"><strong>40만 원</strong></span></td></tr>
-        <tr><td class="rowhead">S10. 진입 팝업 <span class="pill indigo">런칭 예정</span></td><td>사이트 진입 시 · 하루 1회 상한</td><td class="muted">전면 이미지</td><td>1</td><td><span class="win"><strong>150만 원</strong></span></td></tr>
-      </tbody>
-    </table>
-    <div class="foot-note" style="margin-top:10px">이용 경험을 해치지 않는 자리에 구좌를 계속 늘립니다. "런칭 예정" 구좌는 오픈 시점에 안내드립니다.</div>
-  </div>
-  <div class="brand-mark">MyPokerTrips</div>
-</section>
-
-<section class="slide" id="slide-13">
-  <div class="sec-label"><b>04</b>광고 상품 · 단가</div>
-  <div class="page-head">
-    <div class="page-title a-left d1">텍스트 라인 · 메시지형 단가</div>
-    <p class="page-desc a-right d1"><strong>워딩만 들어가는 얇은 광고</strong>와 이용자에게 직접 닿는 메시지 상품입니다.<br>텍스트 라인은 월 단가, 메시지형은 회당 단가입니다. 메시지는 수신 동의자에게만 08~21시 발송.</p>
-  </div>
-  <div class="slide-body">
-    <table class="tbl compact dense a-up d2" style="font-size:12px">
-      <thead><tr><th style="width:250px">상품</th><th>위치 · 설명</th><th>형태</th><th style="width:110px">구좌 수 · 단위</th><th style="width:150px">단가</th></tr></thead>
-      <tbody>
-        <tr><td class="grp" colspan="5">텍스트 라인 (워딩만)</td></tr>
-        <tr><td class="rowhead">T1. 일정 목록 텍스트 라인</td><td>일정 목록 10건마다 1줄 (워딩만, 링크 1개)</td><td class="muted">텍스트 1줄</td><td>10</td><td><span class="win"><strong>20만 원</strong></span></td></tr>
-        <tr><td class="rowhead">T2. 대회 상세 상단 스폰서 한 줄</td><td>대회 상세 본문 위, 대회별 지정</td><td class="muted">텍스트 1줄</td><td>대회당</td><td><span class="win"><strong>15만 원</strong></span></td></tr>
-        <tr><td class="rowhead">T3. 검색 자동완성 스폰서 키워드</td><td>검색창 자동완성 최상단, 키워드 지정</td><td class="muted">키워드 + 링크</td><td>키워드당</td><td><span class="win"><strong>15만 원</strong></span></td></tr>
-        <tr><td class="rowhead">T4. 국가 · 도시 필터 스폰서 라인</td><td>필터 목록 상단 한 줄</td><td class="muted">텍스트 1줄</td><td>5</td><td><span class="win"><strong>20만 원</strong></span></td></tr>
-        <tr><td class="rowhead">T5. "이번 달 대회" 위젯 스폰서 라인</td><td>홈 이번 달 타일 하단 한 줄</td><td class="muted">텍스트 1줄</td><td>1</td><td><span class="win"><strong>40만 원</strong></span></td></tr>
-        <tr><td class="rowhead">T6. 함께 보는 대회 추천 슬롯</td><td>대회 상세 하단 추천 목록 내 1건, "스폰서" 표기</td><td class="muted">대회 카드 (소형)</td><td>3</td><td><span class="win"><strong>30만 원</strong></span></td></tr>
-        <tr><td class="grp" colspan="5">메시지형</td></tr>
-        <tr><td class="rowhead">S5. 카카오톡 주간 알림 삽입 <span class="pill indigo">런칭 예정</span></td><td>주 1회 "이번 주 대회 요약" 메시지 내 1건</td><td class="muted">텍스트 + 링크</td><td>회당</td><td><span class="win"><strong>25만 원</strong></span></td></tr>
-        <tr><td class="rowhead">M2. 담은 대회 리마인드 스폰서 라인 <span class="pill indigo">런칭 예정</span></td><td>D-7 · D-1 리마인드 메시지 하단 한 줄</td><td class="muted">텍스트 1줄</td><td>회당</td><td><span class="win"><strong>20만 원</strong></span></td></tr>
-        <tr><td class="rowhead">M3. 알림함 쪽지 광고 <span class="pill indigo">런칭 예정</span></td><td>사이트 알림함 1건, 수신 동의자</td><td class="muted">쪽지 (텍스트 + 링크)</td><td>회당</td><td><span class="win"><strong>50만 원</strong></span></td></tr>
-      </tbody>
-    </table>
-    <div class="foot-note" style="margin-top:10px">텍스트 라인은 링크 1개 · 40자 이내 · "광고" 표기. 메시지형은 "(광고)" 표기와 수신거부 안내를 포함합니다.</div>
-  </div>
-  <div class="brand-mark">MyPokerTrips</div>
-</section>
-
-<section class="slide" id="slide-14">
-  <div class="sec-label"><b>04</b>광고 상품 · 단가</div>
-  <div class="page-head">
-    <div class="page-title a-left d1">제작 · 자동화 서비스 단가</div>
-    <p class="page-desc a-right d1">노출이 아닌 <strong>운영과 제작을 자동화</strong>해 드리는 상품입니다.<br>소재 준비와 게재 관리에 드는 손을 줄이는 항목으로, 필요한 것만 선택합니다.</p>
-  </div>
-  <div class="slide-body">
-    <table class="tbl compact dense a-up d2" style="font-size:12px">
-      <thead><tr><th style="width:250px">상품</th><th>내용</th><th>단위</th><th style="width:110px">수량</th><th style="width:150px">단가</th></tr></thead>
-      <tbody>
-        <tr><td class="grp" colspan="5">제작 · 자동화</td></tr>
-        <tr><td class="rowhead">광고 이미지 제작</td><td>구좌별 규격 세트, 템플릿 기반 자동 생성</td><td class="muted">세트당</td><td>—</td><td><span class="win"><strong>30만 원</strong></span></td></tr>
-        <tr><td class="rowhead">대회 카드 자동 생성</td><td>대회 정보 입력 → 카드 · 썸네일 자동 생성</td><td class="muted">건당</td><td>—</td><td><span class="win"><strong>10만 원</strong></span></td></tr>
-        <tr><td class="rowhead">소재 자동 리사이즈</td><td>이미지 1장 → 전 구좌 규격</td><td class="muted">세트당</td><td>—</td><td><span class="win"><strong>10만 원</strong></span></td></tr>
-        <tr><td class="rowhead">소재 A/B 자동 로테이션</td><td>소재 2종 이상 자동 교차 노출</td><td class="muted">월</td><td>1</td><td><span class="win"><strong>20만 원</strong></span></td></tr>
-        <tr><td class="rowhead">게재 스케줄 자동 관리</td><td>기간 분할 · 시간대 · 요일 지정 노출</td><td class="muted">월</td><td>1</td><td><span class="win"><strong>20만 원</strong></span></td></tr>
-        <tr><td class="rowhead">대회 정보 자동 갱신 연동</td><td>주최사 공식 페이지 변경 → 상세 자동 반영</td><td class="muted">월</td><td>대회당</td><td><span class="win"><strong>30만 원</strong></span></td></tr>
-        <tr><td class="rowhead">랜딩 QR · 단축링크 생성</td><td>구좌별 링크 자동 발급</td><td class="muted">건당</td><td>—</td><td><span class="win"><strong>5만 원</strong></span></td></tr>
-        <tr><td class="rowhead">공유 카드 스폰서 워터마크</td><td>대회 공유 이미지(OG)에 로고 삽입</td><td class="muted">월</td><td>1</td><td><span class="win"><strong>40만 원</strong></span></td></tr>
-      </tbody>
-    </table>
-    <div class="foot-note" style="margin-top:10px">제작물의 최종 확인과 게재 승인은 광고주가 합니다. 자동 생성 결과는 게재 전 검수를 거칩니다.</div>
-  </div>
-  <div class="brand-mark">MyPokerTrips</div>
-</section>
-
-<section class="slide" id="slide-15">
-  <div class="sec-label"><b>04</b>광고 상품 · 단가</div>
-  <div class="page-head">
     <div class="page-title a-left d1">패키지 <span class="hl">3종</span></div>
-    <p class="page-desc a-right d1"><strong>스탠다드 월 500만 원</strong>이 기본 패키지입니다. 모든 상품은 개별 단가로도 판매하며 자유롭게 조합합니다.<br>패키지는 개별 합산보다 약 20~25% 낮게 책정했습니다. 금액은 VAT 별도, 월 기준.</p>
+    <p class="page-desc a-right d1"><strong>스탠다드 월 500만 원</strong>이 기본 패키지입니다.<br>노출 구좌부터 운영 · 제작 지원까지 한 번에 담았습니다. 금액은 VAT 별도, 월 기준.</p>
   </div>
   <div class="slide-body">
     <div class="bundle-grid">
       <div class="bundle a-up d2">
         <div class="bd-name">스타터</div>
         <div class="bd-tot">월 150만 원</div>
-        <div class="bd-list">개별 합산 200만 원 → 패키지 150만 원</div>
         <div class="bd-desc">대회명 검색과 목록에서 이름을 알리는 구성</div>
-        <ul><li><b>일정 목록 텍스트 라인 3구좌</b><span>60만</span></li><li><b>검색 자동완성 키워드 2개</b><span>30만</span></li><li><b>S4. 대회 상세 하단 배너</b><span>50만</span></li><li><b>광고 이미지 제작 1세트</b><span>30만</span></li><li><b>대회 카드 생성 + 스케줄 관리</b><span>30만</span></li></ul>
+        <ul><li><i class="fa-solid fa-check"></i><span>대회 상세 하단 배너</span></li><li><i class="fa-solid fa-check"></i><span>텍스트 라인 2구좌</span></li><li><i class="fa-solid fa-check"></i><span>검색 자동완성 키워드 1개</span></li><li><i class="fa-solid fa-check"></i><span>대회 카드 자동 생성 · 이미지 제작 1세트</span></li><li><i class="fa-solid fa-check"></i><span>스케줄 관리 · QR</span></li></ul>
       </div>
       <div class="bundle hero a-up d2">
         <div class="bd-name">스탠다드 <span class="pill coral">기본 패키지</span></div>
         <div class="bd-tot">월 500만 원</div>
-        <div class="bd-list">개별 합산 650만 원 → 패키지 500만 원</div>
-        <div class="bd-desc">스폰서 자리 + 배너 전체 + 카카오톡까지, 이전 통합 구성 그대로</div>
-        <ul><li><b>S1. 스폰서 대회 고정 노출</b><span>250만</span></li><li><b>S2. 홈 상단 배너</b><span>120만</span></li><li><b>S3. 일정 목록 중간 배너</b><span>70만</span></li><li><b>S4. 대회 상세 하단 배너</b><span>50만</span></li><li><b>S5. 카카오톡 주간 알림 4회</b><span>100만</span></li><li><b>순차 오픈 배너 S6~S8</b><span>60만</span></li></ul>
+        <div class="bd-desc">스폰서 자리 + 배너 전체 + 카카오톡까지, 이전 통합 상품 그대로</div>
+        <ul><li><i class="fa-solid fa-check"></i><span>스폰서 대회 고정 노출</span></li><li><i class="fa-solid fa-check"></i><span>홈 상단 · 목록 중간 · 상세 하단 배너</span></li><li><i class="fa-solid fa-check"></i><span>카카오톡 주간 알림 월 4회</span></li><li><i class="fa-solid fa-check"></i><span>순차 오픈 배너 · 상세 상단 스폰서 한 줄</span></li><li><i class="fa-solid fa-check"></i><span>리마인드 스폰서 라인 월 2회 · 키워드 3개</span></li><li><i class="fa-solid fa-check"></i><span>전 구좌 이미지 제작 · A/B · 스케줄 · 정보 자동 갱신</span></li></ul>
       </div>
       <div class="bundle a-up d2">
         <div class="bd-name">프리미엄</div>
         <div class="bd-tot">월 1,000만 원</div>
-        <div class="bd-list">개별 합산 1,240만 원 → 패키지 1,000만 원</div>
         <div class="bd-desc">스탠다드에 팝업 · 쪽지 · 텍스트 라인까지 더한 구성</div>
-        <ul><li><b>스탠다드 구성 전체</b><span>650만</span></li><li><b>진입 팝업</b><span>150만</span></li><li><b>알림함 쪽지 광고 2회</b><span>100만</span></li><li><b>일정 목록 텍스트 라인 5구좌</b><span>100만</span></li><li><b>국내 · 해외 탭 상단 배너 2구좌</b><span>80만</span></li><li><b>위젯 라인 + 추천 슬롯</b><span>70만</span></li><li><b>워터마크 + 이미지 제작 + A/B 로테이션</b><span>90만</span></li></ul>
+        <ul><li><i class="fa-solid fa-check"></i><span>스탠다드 구성 전체</span></li><li><i class="fa-solid fa-check"></i><span>진입 팝업 + 국내 · 해외 탭 상단 배너</span></li><li><i class="fa-solid fa-check"></i><span>알림함 쪽지 광고 월 2회</span></li><li><i class="fa-solid fa-check"></i><span>텍스트 라인 5구좌</span></li><li><i class="fa-solid fa-check"></i><span>함께 보는 대회 추천 슬롯 · 키워드 5개</span></li><li><i class="fa-solid fa-check"></i><span>리마인드 라인 월 4회 · 워터마크 · 월 1회 소재 교체</span></li></ul>
       </div>
     </div>
     <div class="foot-note" style="text-align:center;margin-top:12px">* 구좌 가용 상황에 따라 같은 급의 대체 구좌를 제안드립니다 · 3개월 이상 계약 시 조건은 별도 안내</div>
@@ -693,8 +612,62 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
   <div class="brand-mark">MyPokerTrips</div>
 </section>
 
+<section class="slide" id="slide-13">
+  <div class="sec-label"><b>04</b>광고 상품 · 단가</div>
+  <div class="page-head">
+    <div class="page-title a-left d1">개별 판매 상품</div>
+    <p class="page-desc a-right d1">패키지 없이 <strong>단독으로도 판매하는 상품</strong>입니다. 패키지에 더해 구좌를 늘릴 때도 이 단가를 적용합니다.<br>모든 구좌에 "광고" 또는 "스폰서" 표기 · 노출은 화면 50% 이상 1초 기준 · VAT 별도.</p>
+  </div>
+  <div class="slide-body">
+    <table class="tbl compact dense a-up d2" style="font-size:12.5px">
+      <thead><tr><th style="width:290px">상품</th><th>위치 · 설명</th><th style="width:90px">단위</th><th style="width:110px">구좌 수</th><th style="width:140px">단가</th></tr></thead>
+      <tbody>
+        <tr><td class="rowhead">스폰서 대회 고정 노출 (S1) <span class="pill coral">대표</span></td><td>홈 스폰서 영역 + 일정 목록 상단, 대회 기간 고정</td><td>월</td><td class="muted">3 로테이션</td><td><span class="win"><strong>250만 원</strong></span></td></tr>
+        <tr><td class="rowhead">홈 상단 배너 (S2)</td><td>홈 최상단, 롤링 노출</td><td>월</td><td class="muted">구좌 3</td><td><span class="win"><strong>120만 원</strong></span></td></tr>
+        <tr><td class="rowhead">일정 목록 중간 배너 (S3)</td><td>일정 목록 사이 (상단 · 하단 구간)</td><td>월</td><td class="muted">구좌 2</td><td><span class="win"><strong>70만 원</strong></span></td></tr>
+        <tr><td class="rowhead">대회 상세 하단 배너 (S4)</td><td>모든 대회 상세 페이지 하단</td><td>월</td><td class="muted">구좌 1</td><td><span class="win"><strong>50만 원</strong></span></td></tr>
+        <tr><td class="rowhead">진입 팝업 (S10) <span class="pill indigo">런칭 예정</span></td><td>사이트 진입 시 전면 노출 · 하루 1회 상한</td><td>월</td><td class="muted">구좌 1</td><td><span class="win"><strong>150만 원</strong></span></td></tr>
+        <tr><td class="rowhead">국내 · 해외 탭 상단 배너 2구좌 세트 (S9) <span class="pill indigo">런칭 예정</span></td><td>국내 / 해외 탭 첫 화면 상단</td><td>월</td><td class="muted">2구좌</td><td><span class="win"><strong>80만 원</strong></span></td></tr>
+        <tr><td class="rowhead">텍스트 라인 5구좌 세트</td><td>일정 목록 · 필터 · 이번 달 위젯 텍스트 라인 (워딩만, 링크 1개)</td><td>월</td><td class="muted">5구좌</td><td><span class="win"><strong>100만 원</strong></span></td></tr>
+        <tr><td class="rowhead">카카오톡 주간 알림 삽입 (S5) <span class="pill indigo">런칭 예정</span></td><td>주 1회 "이번 주 대회 요약" 메시지 내 1건</td><td>월 4회</td><td class="muted">—</td><td><span class="win"><strong>100만 원</strong></span></td></tr>
+        <tr><td class="rowhead">알림함 쪽지 광고 <span class="pill indigo">런칭 예정</span></td><td>사이트 알림함 1건, 수신 동의자</td><td>회당</td><td class="muted">—</td><td><span class="win"><strong>50만 원</strong></span></td></tr>
+      </tbody>
+    </table>
+    <div class="foot-note" style="margin-top:10px">메시지형 상품은 수신 동의자에게만 08~21시 발송하며 "(광고)" 표기와 수신거부 안내를 포함합니다. "런칭 예정" 상품은 오픈 시점에 안내드립니다.</div>
+  </div>
+  <div class="brand-mark">MyPokerTrips</div>
+</section>
+
+<section class="slide" id="slide-14">
+  <div class="sec-label"><b>04</b>광고 상품 · 단가</div>
+  <div class="page-head">
+    <div class="page-title a-left d1">패키지 포함 서비스</div>
+    <p class="page-desc a-right d1">별도 요금 없이 <strong>패키지에 기본으로 들어가는 항목</strong>입니다.<br>서브 구좌와 소재 제작 · 게재 자동화까지 포함합니다.</p>
+  </div>
+  <div class="slide-body">
+    <table class="tbl compact dense a-up d2" style="font-size:12px">
+      <thead><tr><th style="width:290px">포함 서비스</th><th>내용</th><th style="width:110px">스타터</th><th style="width:110px">스탠다드</th><th style="width:150px">프리미엄</th></tr></thead>
+      <tbody>
+        <tr><td class="rowhead">순차 오픈 배너 구좌</td><td>다이어리 탭 · 시리즈 상세 · 검색 결과 하단</td><td><span class="muted">—</span></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+        <tr><td class="rowhead">검색 자동완성 스폰서 키워드</td><td>검색창 자동완성 최상단</td><td>1개</td><td>3개</td><td>5개</td></tr>
+        <tr><td class="rowhead">대회 상세 상단 스폰서 한 줄</td><td>대회 상세 본문 위, 대회별</td><td><span class="muted">—</span></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+        <tr><td class="rowhead">함께 보는 대회 추천 슬롯</td><td>대회 상세 하단 추천 목록 내 1건</td><td><span class="muted">—</span></td><td><span class="muted">—</span></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+        <tr><td class="rowhead">담은 대회 리마인드 스폰서 라인 (런칭 예정)</td><td>D-7 · D-1 리마인드 메시지 하단 한 줄</td><td><span class="muted">—</span></td><td>월 2회</td><td>월 4회</td></tr>
+        <tr><td class="rowhead">대회 카드 자동 생성</td><td>대회 정보 입력 → 카드 · 썸네일</td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+        <tr><td class="rowhead">광고 이미지 제작</td><td>구좌별 규격 세트, 템플릿 기반 자동 생성</td><td>1세트</td><td>전 구좌</td><td>전 구좌 + 월 1회 교체</td></tr>
+        <tr><td class="rowhead">소재 리사이즈 · A/B 로테이션 · 게재 스케줄 관리</td><td>자동 리사이즈 · 소재 교차 노출 · 기간/시간대 지정</td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+        <tr><td class="rowhead">대회 정보 자동 갱신 연동</td><td>주최사 공식 페이지 변경 → 상세 자동 반영</td><td><span class="muted">—</span></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+        <tr><td class="rowhead">랜딩 QR · 단축링크</td><td>구좌별 링크 자동 발급</td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+        <tr><td class="rowhead">공유 카드 스폰서 워터마크</td><td>대회 공유 이미지(OG)에 로고 삽입</td><td><span class="muted">—</span></td><td><span class="muted">—</span></td><td><i class="fa-solid fa-check" style="color:var(--indigo)"></i></td></tr>
+      </tbody>
+    </table>
+    <div class="foot-note" style="margin-top:10px">제작물의 최종 확인과 게재 승인은 광고주가 합니다. 자동 생성 결과는 게재 전 검수를 거칩니다.</div>
+  </div>
+  <div class="brand-mark">MyPokerTrips</div>
+</section>
+
 <!-- ===== 16 · Placements ===== -->
-<section class="slide" id="slide-16">
+<section class="slide" id="slide-15">
   <div class="sec-label"><b>04</b>주요 게재지면</div>
   <div class="page-head center"><div class="page-title a-up d1">주요 게재지면</div></div>
   <div class="slide-body">
@@ -711,14 +684,14 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
 </section>
 
 <!-- ===== 19 · Divider 06 ===== -->
-<section class="slide slide-dark" id="slide-17">
+<section class="slide slide-dark" id="slide-16">
   <div class="doc-tag"><span class="wm">MyPokerTrips</span><span>광고 상품 소개서</span></div>
   <div class="divider-wrap"><div class="divider-num a-left d1">05</div><div class="a-left d2"><div class="divider-title">광고 신청</div><div class="divider-sub">문의부터 집행까지 4단계</div></div></div>
   <div class="brand-mark">MyPokerTrips</div>
 </section>
 
 <!-- ===== 20 · Process ===== -->
-<section class="slide" id="slide-18">
+<section class="slide" id="slide-17">
   <div class="sec-label"><b>05</b>광고 신청</div>
   <div class="page-head center"><div class="page-title a-up d1">집행 프로세스</div></div>
   <div class="slide-body">
@@ -733,7 +706,7 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
 </section>
 
 <!-- ===== 21 · Policy ===== -->
-<section class="slide" id="slide-19">
+<section class="slide" id="slide-18">
   <div class="sec-label"><b>05</b>광고 신청</div>
   <div class="page-head center"><div class="page-title a-up d1" style="font-size:32px">마이포커트립스 게재 기준에 따라 일부 광고는 집행에 제약이 있을 수 있습니다.</div></div>
   <div class="slide-body">
@@ -755,7 +728,7 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
 </section>
 
 <!-- ===== 22 · Inquiry ===== -->
-<section class="slide" id="slide-20">
+<section class="slide" id="slide-19">
   <div class="sec-label"><b>05</b>광고 신청</div>
   <div class="page-head center"><div class="page-title a-up d1" style="font-size:30px">관심 있으시면 아래 [광고 신청 양식]을 문의 메일로 보내 주십시오.<br>영업일 3일 내 회신드립니다.</div></div>
   <div class="slide-body">
@@ -778,7 +751,7 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
 </section>
 
 <!-- ===== 23 · Thanks ===== -->
-<section class="slide slide-cover" id="slide-21">
+<section class="slide slide-cover" id="slide-20">
   <div class="cover-wrap">
     <div class="cover-grid" aria-hidden="true"></div>
     <svg class="cover-route" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -805,14 +778,14 @@ body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSy
   <button class="nav-arrow" id="prevBtn" aria-label="이전 슬라이드"><i class="fa-solid fa-chevron-left"></i></button>
   <button class="nav-arrow" id="nextBtn" aria-label="다음 슬라이드"><i class="fa-solid fa-chevron-right"></i></button>
 </div>
-<div class="page-number" id="pageNumber"><strong>1</strong> / 21</div>
+<div class="page-number" id="pageNumber"><strong>1</strong> / 20</div>
 <div class="keyboard-hint" id="keyboardHint"><i class="fa-solid fa-keyboard"></i> ← → 또는 스와이프로 이동</div>
 </div>
 
 <script>
 (function () {
-  var totalSlides = 21, current = 1, isAnimating = false;
-  var slideTitles = ['표지','Contents','매체 소개','이용자 특성','화면 구조','02 스폰서 대회','상품 소개','상품 상세','03 특장점','무료와 유료','04 상품·단가','노출형 단가','텍스트·메시지 단가','제작·자동화 단가','패키지 3종','게재지면','05 광고 신청','집행 프로세스','게재 기준','신청 양식','감사합니다'];
+  var totalSlides = 20, current = 1, isAnimating = false;
+  var slideTitles = ['표지','Contents','매체 소개','이용자 특성','화면 구조','02 스폰서 대회','상품 소개','상품 상세','03 특장점','무료와 유료','04 상품·단가','패키지 3종','개별 판매 상품','포함 서비스','게재지면','05 광고 신청','집행 프로세스','게재 기준','신청 양식','감사합니다'];
   var presentation = document.getElementById('presentation'), progressBar = document.getElementById('progressBar'), pageNumber = document.getElementById('pageNumber'), navDots = document.getElementById('navDots'), keyboardHint = document.getElementById('keyboardHint');
   for (var i = 1; i <= totalSlides; i++) { var dot = document.createElement('button'); dot.className = 'nav-dot' + (i === 1 ? ' active' : ''); dot.title = slideTitles[i-1]; dot.setAttribute('aria-label', i + '. ' + slideTitles[i-1]); (function (n) { dot.addEventListener('click', function () { goToSlide(n); }); })(i); navDots.appendChild(dot); }
   function updateChrome() {
